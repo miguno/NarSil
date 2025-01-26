@@ -49,6 +49,7 @@ lib/user/window.prf
 mk/buildsys.mk
 mk/extra.mk
 mk/sinclude.mk
+narsil
 Release/
 src/**/*.d
 src/**/*.o

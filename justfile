@@ -34,7 +34,9 @@ build-macos-app:
 # run NarSil as console macOS binary (ASCII mode)
 [group('app')]
 run-macos-console:
-    ./narsil
+    # Options are explained at
+    # https://github.com/NickMcConnell/NarSil/blob/f121c2e/src/main-gcu.c#L1465-L1491
+    ./narsil -mgcu -- -n6 -right "60x27,*" -bottom "*x12"
 
 # run NarSil as a native macOS app
 [group('app')]

@@ -348,7 +348,7 @@ const char help_gcu[] = "Text mode, subopts\n"
 /**
  * Usage:
  *
- * angband -mgcu -- [-B] [-D] [-nN]
+ * narsil -mgcu -- [-B] [-D] [-nN]
  *
  *   -B      Use brighter bold characters
  *   -D      Use terminal default background color
@@ -1475,7 +1475,7 @@ errr init_gcu(int argc, char **argv) {
         --------------------------------|----------------------
         <----Term-3: (COLS-30)x7------->| Term-2: 30x(LINES-27)
 
-        angband -mgcu -- -bottom *x7 -right 30x27,* will layout as
+        narsil -mgcu -- -bottom *x7 -right 30x27,* will layout as
 
         Term-0: Map (COLS-30)x(LINES-7) | Term-2: 30x27
                                         |------------------------------

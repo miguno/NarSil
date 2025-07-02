@@ -93,7 +93,9 @@ AC_PROG_MAKE_SET
 AC_PROG_LN_S
 AC_PROG_INSTALL
 AC_PROG_MKDIR_P
+AC_PROG_RANLIB
 AC_CHECK_TOOL(RC, windres, no)
+AC_PATH_PROG(AR, ar)
 AC_PATH_PROG(RM, rm)
 AC_PATH_PROG(MV, mv)
 AC_PATH_PROG(CP, cp)
@@ -101,7 +103,6 @@ AC_PATH_PROG(CP, cp)
 AC_HEADER_DIRENT
 AC_CHECK_HEADERS([fcntl.h])
 AC_HEADER_STDBOOL
-AC_C_CONST
 AC_CHECK_FUNCS([mkdir setresgid setegid stat])
 
 dnl needed because h-basic.h checks for this define for autoconf support.

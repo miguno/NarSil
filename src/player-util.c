@@ -1282,6 +1282,7 @@ static bool player_rest_disturb = false;
 /**
  * Set the number of resting turns.
  *
+ * \param p is the player trying to rest
  * \param count is the number of turns to rest or one of the REST_ constants.
  */
 void player_resting_set_count(struct player *p, int16_t count)
@@ -1405,6 +1406,7 @@ int player_get_resting_repeat_count(struct player *p)
 /**
  * Set the number of resting turns to repeat.
  *
+ * \param p is the player trying to rest
  * \param count is the number of turns requested for rest most recently.
  */
 void player_set_resting_repeat_count(struct player *p, int16_t count)
@@ -1438,9 +1440,9 @@ void player_place(struct chunk *c, struct player *p, struct loc grid)
  * Take care of bookkeeping after moving the player with monster_swap().
  *
  * \param p is the player that was moved.
- * \param eval_trap, if true, will cause evaluation (possibly affecting the
+ * \param eval_trap will, if true, cause evaluation (possibly affecting the
  * player) of the traps in the grid.
- * \param is_involuntary, if true, will do appropriate actions (flush the
+ * \param is_involuntary will, if true, do appropriate actions (flush the
  * command queue) for a move not expected by the player.
  */
 void player_handle_post_move(struct player *p, bool eval_trap,
